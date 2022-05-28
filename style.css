@@ -14,17 +14,17 @@ body {
     background: linear-gradient(204deg, rgba(8, 15, 36) 9%, rgba(9,9,121,0.835171568627451) 63%, rgba(0,212,255,1) 100%); */
 }
 
-header{
+header {
     height: 20%;
 }
 
-main{
+main {
     height: 50%;
     display: flex;
     justify-content: center;
 }
 
-main div{
+main div {
     width: 100%;
     height: 100%;
     display: flex;
@@ -32,18 +32,18 @@ main div{
     align-items: center;
 }
 
-img{
+img {
     border-radius: 50%;
     width: 12%;
     height: 50%;
 }
 
 h2,
-h3{
+h3 {
     color: bisque;
 }
 
-.icons{
+.icons {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -51,31 +51,38 @@ h3{
     height: fit-content;
 }
 
-.fa-github{
+.fa-github {
     margin-left: -20%;
-    color: white; 
+    color: white;
 }
 
-.fa-whatsapp{
-    color: white; 
+.fa-whatsapp {
+    color: white;
     margin-left: 40%;
 }
 
-footer{
+footer {
     height: 30%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding-top: 5%;
 }
 
-.footerText{
+.footerDiv {
     position: relative;
     width: fit-content;
     height: fit-content;
     cursor: pointer;
+    width: 33%;
+    display: flex;
+    justify-content: center;
 }
 
-.footerText::before{
+.footerText {
+    position: relative;
+}
+
+.footerText::before {
     position: absolute;
     content: '';
     bottom: -2%;
@@ -85,29 +92,30 @@ footer{
     background-color: white;
     transition: .7s ease;
 }
-.footerText:hover::before{
+
+.footerText:hover::before {
     content: '';
     width: 100%;
     transition: .7s ease;
 }
 
-.typeWriter{
+.typeWriter {
     position: relative;
     z-index: 1;
 }
 
-.typeWriter:before{
+.typeWriter:before {
     content: '';
     position: absolute;
-    z-index:2;
+    z-index: 2;
     width: 100%;
     height: 100%;
     background-color: rgba(8, 15, 36);
     left: 0;
-    animation: typing steps(19) 3.5s forwards ;
+    animation: typing steps(19) 3.5s forwards;
 }
 
-.typeWriter::after{
+.typeWriter::after {
     content: '';
     position: absolute;
     background-color: white;
@@ -115,50 +123,55 @@ footer{
     width: 5%;
     left: 0;
     animation: typingCursor steps(19) 3.5s forwards,
-    blink steps(19) 1s infinite;
+        blink steps(19) 1s infinite;
 }
 
 @keyframes typing {
-    0%{
+    0% {
         left: 0;
     }
-    99%{
+
+    99% {
         left: 100%;
     }
-    100%{
+
+    100% {
         left: 105%;
     }
 }
 
 @keyframes typingCursor {
-    to{
+    to {
         left: 100%;
     }
 }
 
 @keyframes blink {
-    from{
+    from {
         background-color: white;
     }
-    to{
+
+    to {
         background-color: transparent;
     }
 }
 
-@keyframes zoomout{
-    0%{
+@keyframes zoomout {
+    0% {
         top: 40%;
         scale: (1);
     }
-    10%{
+
+    10% {
         scale: (0.7);
     }
-    100%{
-        top: 140%; 
+
+    100% {
+        top: 140%;
     }
 }
 
-.floaterDiv{
+.floaterDiv {
     position: absolute;
     height: 0;
     width: 70%;
@@ -173,7 +186,7 @@ footer{
 
 }
 
-.floaterDivActive{
+.floaterDivActive {
     height: 70%;
     top: 40%;
     scale: (1);
@@ -181,7 +194,7 @@ footer{
     transition-delay: .3s;
 }
 
-.floaterDivCloseButton{
+.floaterDivCloseButton {
     position: absolute;
     right: 1%;
     top: .5%;
@@ -189,4 +202,79 @@ footer{
     background-color: transparent;
     cursor: pointer;
     font-size: 150%;
+}
+
+.thirdSection {
+    display: flex;
+    flex-direction: row;
+    padding: 1%;
+}
+
+.divKnowledge {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divOne,
+.divTwo {
+    border: 1px solid grey;
+    border-width: 0 1px 0 0;
+}
+
+.divOne {
+    justify-content: space-around;
+}
+
+.iconsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.knowledgeTitle {
+    color: rgba(8, 15, 36);
+}
+
+.logo {
+    width: 35%;
+    height: 25%;
+}
+
+.aboutMeTitle {
+    color: rgba(8, 15, 36);
+    display: flex;
+    justify-content: center;
+}
+
+.divAboutMe {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1%;
+}
+
+/* .divAboutMe p{
+    font-family: roboto, sans-serif;
+    line-height: 150%;
+} */
+
+
+.divAboutMeOne,
+.divAboutMeTwo {
+    border: 1px solid grey;
+    border-width: 0 1px 0 0;
+}
+
+.aboutMeContainer {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5%;
+}
+
+.divAboutMeTwo p{
+    color: rgba(8, 15, 36);;
 }
