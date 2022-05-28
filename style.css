@@ -1,0 +1,192 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(8, 15, 36);
+    overflow-y: hidden;
+    /* background: rgba(8, 15, 36, 0.171);
+    background: linear-gradient(204deg, rgba(8, 15, 36) 9%, rgba(9,9,121,0.835171568627451) 63%, rgba(0,212,255,1) 100%); */
+}
+
+header{
+    height: 20%;
+}
+
+main{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+main div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+img{
+    border-radius: 50%;
+    width: 12%;
+    height: 50%;
+}
+
+h2,
+h3{
+    color: bisque;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+}
+
+.fa-github{
+    margin-left: -20%;
+    color: white; 
+}
+
+.fa-whatsapp{
+    color: white; 
+    margin-left: 40%;
+}
+
+footer{
+    height: 30%;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 5%;
+}
+
+.footerText{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+}
+
+.footerText::before{
+    position: absolute;
+    content: '';
+    bottom: -2%;
+    left: 0;
+    width: 0;
+    height: 5%;
+    background-color: white;
+    transition: .7s ease;
+}
+.footerText:hover::before{
+    content: '';
+    width: 100%;
+    transition: .7s ease;
+}
+
+.typeWriter{
+    position: relative;
+    z-index: 1;
+}
+
+.typeWriter:before{
+    content: '';
+    position: absolute;
+    z-index:2;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(8, 15, 36);
+    left: 0;
+    animation: typing steps(19) 3.5s forwards ;
+}
+
+.typeWriter::after{
+    content: '';
+    position: absolute;
+    background-color: white;
+    height: 100%;
+    width: 5%;
+    left: 0;
+    animation: typingCursor steps(19) 3.5s forwards,
+    blink steps(19) 1s infinite;
+}
+
+@keyframes typing {
+    0%{
+        left: 0;
+    }
+    99%{
+        left: 100%;
+    }
+    100%{
+        left: 105%;
+    }
+}
+
+@keyframes typingCursor {
+    to{
+        left: 100%;
+    }
+}
+
+@keyframes blink {
+    from{
+        background-color: white;
+    }
+    to{
+        background-color: transparent;
+    }
+}
+
+@keyframes zoomout{
+    0%{
+        top: 40%;
+        scale: (1);
+    }
+    10%{
+        scale: (0.7);
+    }
+    100%{
+        top: 140%; 
+    }
+}
+
+.floaterDiv{
+    position: absolute;
+    height: 0;
+    width: 70%;
+    border-radius: 5px;
+    left: 50%;
+    top: 140%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    background-color: white;
+    border: 2px solid rgba(8, 15, 36, 0.842);
+    transition: .3s ease-in-out;
+
+}
+
+.floaterDivActive{
+    height: 70%;
+    top: 40%;
+    scale: (1);
+    transition: .3s ease-in-out;
+    transition-delay: .3s;
+}
+
+.floaterDivCloseButton{
+    position: absolute;
+    right: 1%;
+    top: .5%;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 150%;
+}

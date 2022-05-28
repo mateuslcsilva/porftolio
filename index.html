@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js" defer></script>
+        <title>Document</title>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div>
+            <img src="foto.jpg" alt="foto">
+            <h2>Mateus Leite</h2>
+            <div class="icons">
+                <a href="https://github.com/mateuslcsilva" target="_blank"><i class="fa fa-github" style="font-size:36px;"></i></a>
+                <a href="https://wa.me/+5544991247281" target="_blank"><i class="fa fa-whatsapp" style="font-size: 36px; "></i></a>
+            </div>
+            <h3 class='typeWriter'>Front-End Developer</h3 class='typeWriter'>
+        </div>
+    </main>
+    <footer>
+        <h2 class='footerText' onclick="floaterDivActive(0)">Sobre mim</h2>
+        <h2 class='footerText' onclick="floaterDivActive(1)">Projetos</h2>
+        <h2 class='footerText' onclick="floaterDivActive(2)">Stacks</h2>
+
+    </footer>
+</body>
+
+<div class='floaterDiv'>
+    <button class='floaterDivCloseButton' onclick="closeFloaterDiv()">x</button>
+    sobre mim
+</div>
+<div class='floaterDiv'>
+    <button class='floaterDivCloseButton' onclick="closeFloaterDiv()">x</button>
+    Projetos
+</div>
+<div class='floaterDiv'>
+    <button class='floaterDivCloseButton' onclick="closeFloaterDiv()">x</button>
+    Stacks
+</div>
+
+</html>
