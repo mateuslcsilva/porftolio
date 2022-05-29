@@ -5,6 +5,12 @@
     font-family: 'Roboto Mono', monospace;
 }
 
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
 body {
     height: 100vh;
     width: 100vw;
@@ -32,7 +38,7 @@ main div {
     align-items: center;
 }
 
-img {
+.foto {
     border-radius: 50%;
     width: 12%;
     height: 50%;
@@ -223,7 +229,9 @@ footer {
     border-width: 0 1px 0 0;
 }
 
-.divOne {
+.divOne,
+.divThree,
+.divTwo {
     justify-content: space-around;
 }
 
@@ -240,6 +248,7 @@ footer {
 .logo {
     width: 35%;
     height: 25%;
+    border-radius: 50%;
 }
 
 .aboutMeTitle {
@@ -255,10 +264,9 @@ footer {
     padding-left: 1%;
 }
 
-/* .divAboutMe p{
-    font-family: roboto, sans-serif;
-    line-height: 150%;
-} */
+.divAboutMe p {
+    font-size: 1.9vh;
+}
 
 
 .divAboutMeOne,
@@ -275,6 +283,112 @@ footer {
     margin-top: 5%;
 }
 
-.divAboutMeTwo p{
-    color: rgba(8, 15, 36);;
+.divAboutMeTwo p {
+    color: rgba(8, 15, 36);
+    ;
+}
+
+.secondSection {
+    padding-top: 2%;
+    overflow-x: hidden;
+}
+
+.projectImage {
+    width: 80%;
+    height: 85%;
+    border-radius: none;
+}
+
+.carroselDiv {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    left: 140%;
+    transition: .7s ease;
+    width: 100%;
+    height: 93%;
+}
+
+.carroselDivActive {
+    left: 0;
+    transition: .7s ease;
+}
+
+.projectImageTwo {
+    width: 60%;
+    height: 80%;
+}
+
+.projectImageThree{
+    width: 70%;
+    height: 80%;
+}
+
+.btnsProject {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 5vh;
+    margin-top: 1%;
+}
+
+.btnProject {
+    border-radius: 5px;
+    width: 30%;
+    background-color: rgba(8, 15, 36);
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.arrow {
+    position: absolute;
+    margin: none;
+    padding: none;
+    width: 5%;
+    height: 5%;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.arrowImage {
+    width: 60%;
+    height: 120%;
+    image-rendering: optimizeQuality;
+    cursor: pointer;
+}
+
+.arrowNextProject {
+    right: 1%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.arrowPreviousProject {
+    left: 1%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+    cursor: pointer;
+}
+
+.arrowImagePreviousProject {
+    transform: rotate(270deg);
+    cursor: pointer;
+}
+
+.arrowImageNextProject {
+    transform: rotate(90deg);
+    cursor: pointer;
 }

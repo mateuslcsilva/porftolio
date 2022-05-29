@@ -20,7 +20,7 @@
     <header></header>
     <main>
         <div>
-            <img src="foto.jpg" alt="foto">
+            <img src="images/foto.jpg" alt="foto" class="foto">
             <h2>Mateus Leite</h2>
             <div class="icons">
                 <a href="https://github.com/mateuslcsilva" target="_blank"><i class="fa fa-github" style="font-size:36px;"></i></a>
@@ -51,37 +51,64 @@
         <div class="divAboutMe divAboutMeOne">
             <p>
                 Tenho 26 anos e estou estudando programação há 6 meses, desde quando descobri que realmente gosto da profissão.
-                Não tenho uma longa experiência com desenvolvimento ainda, até porque concílio trabalho, casa, saúde e relacionamento
+                Não tenho uma muita experiência com desenvolvimento ainda, até porque concilio trabalho, casa, saúde e relacionamento
                 com a programação, mas já tenho vários pequenos projetos que você pode ver no meu GitHub, e alguns estão aqui nesse site. 
             </p>
 
         </div>
         <div class="divAboutMe divAboutMeTwo">
             <p>
-                Por mais que eu não tenha experiência em programação, tenho várias experiências de trabalho que me ensinaram muita coisa.
-            </p>
+                    Por mais que eu não tenha experiência em programação, tenho várias experiências de trabalho que me ensinaram muita coisa.
+            </p><br>
             <p>
                 Trabalhei com vendas e cobrança, durante muito tempo, onde aprendi não só a trabalhar sobre pressão e com prazo, mas também 
                 a me comunicar muito bem.
-            </p>
+            </p><br>
             <p>
-                E mais recentemente tenho trabalhado em uma empresa de software, que oferece um ERP legado, o que tem me ensinado muito do que 
+                E mais recentemente tenho trabalhado como backoffice em uma empresa de software, que oferece um ERP legado, o que tem me ensinado muito do que 
                 um cliente espera de um software.
             </p>
         </div>
         <div class="divAboutMe divAboutMeThree">
             <p>
                 Falando um pouco sobre meu pessoal, sou músico (toco violão, guitarra e canto músicas barulhentas), namoro há 8 anos,
-                adoro videogames (principalmente Dark Souls), escuto desde música clássica até metal, vejo memes desde que eles nasceram, 
-
+                adoro videogames (principalmente Dark Souls), escuto desde música clássica até metal, vejo memes desde que eles nasceram e 
+                gosto de livros mas não gosto de ler.
             </p>
         </div>
     </div>
 
 </div>
-<div class='floaterDiv'>
+<div class='floaterDiv secondSection'>
     <button class='floaterDivCloseButton' onclick="closeFloaterDiv()">x</button>
-    Projetos
+    <button class="arrow arrowPreviousProject" onclick="previousProjectButton()"><img src="images/setaNextStep.png" alt="arrow" class='arrowImage arrowImagePreviousProject'></button>
+    <button class="arrow arrowNextProject" onclick="nextProjectButton()"><img src="images/setaNextStep.png" alt="arrow" class='arrowImage arrowImageNextProject'></button>
+    <div class="carroselDiv carroselDivOne carroselDivActive">
+        <img src="images/calendario.png" alt="calendario" class='projectImage'>
+        <h4>Calendário</h4>
+        <div class="btnsProject">
+            <button class="btnProject"><a href="https://mateuslcsilva.github.io/calendar/" target="_blank">Ver projeto</a></button>
+            <button class="btnProject"><a href="https://github.com/mateuslcsilva/calendar/blob/main/script.js" target="_blank">Ver o código</a></button>
+        </div>
+    </div>
+
+    <div class="carroselDiv carroselDivTwo">
+        <img src="images/vendasbar.png" alt="vendasbar" class='projectImageTwo'>
+        <h4>Controle de Mesas para Restaurente/Bar</h4>
+        <div class="btnsProject">
+            <button class="btnProject"><a href="https://mateuslcsilva.github.io/vendasbar/" target="_blank">Ver projeto</a></button>
+            <button class="btnProject"><a href="https://github.com/mateuslcsilva/vendasbar/blob/main/script.js" target="_blank">Ver o código</a></button>
+        </div>
+    </div>
+
+    <div class="carroselDiv carroselDivThree">
+        <img src="images/todolist.png" alt="todolist" class='projectImageThree'>
+        <h4>To Do List</h4>
+        <div class="btnsProject">
+            <button class="btnProject"><a href="https://mateuslcsilva.github.io/todolist/" target="_blank">Ver projeto</a></button>
+            <button class="btnProject"><a href="https://github.com/mateuslcsilva/todolist/blob/main/script.js" target="_blank">Ver o código</a></button>
+        </div>
+    </div>
 </div>
 <div class='floaterDiv thirdSection'>
     <button class='floaterDivCloseButton' onclick="closeFloaterDiv()">x</button>
@@ -89,32 +116,32 @@
     <div class="divKnowledge divOne">
         <h3 class="knowledgeTitle">Que eu domino</h3>
 
-                <img src="html5icon.png" alt="html5icon" class="logo">
+                <img src="images/html5icon.png" alt="html5icon" class="logo">
                 <label for="logo">HTML5</label>
-                <img src="css3icon.png" alt="css3icon" class="logo">
+                <img src="images/css3icon.png" alt="css3icon" class="logo">
                 <label for="logo">CSS3</label>
-                <img src="jsicon.jpg" alt="jsicon" class="logo">
+                <img src="images/jsicon.jpg" alt="jsicon" class="logo">
                 <label for="logo">JavaScript</label>
 
     </div>
     <div class="divKnowledge divTwo">
         <h3 class="knowledgeTitle">Que eu estou aprendendo</h3>
 
-        <img src="React-icon.svg" alt="reacticon" class="logo">
+        <img src="images/React-icon.svg" alt="reacticon" class="logo">
         <label for="logo">React JS</label>
-        <img src="ui-ux-icon.png" alt="uiuxicon" class="logo">
+        <img src="images/ui-ux-icon.png" alt="uiuxicon" class="logo">
         <label for="logo">UI/UX</label>
-
+<p class="logo"></p>
 
     </div>
     <div class="divKnowledge divThree">
         <h3 class="knowledgeTitle">Que eu quero aprender</h3>
 
-        <img src="bootstrapicon.png" alt="bootstrapicon" class="logo">
+        <img src="images/bootstrapicon.png" alt="bootstrapicon" class="logo">
         <label for="logo">Bootstrap</label>
-        <img src="nodeicon.png" alt="nodeicon" class="logo">
+        <img src="images/nodeicon.png" alt="nodeicon" class="logo">
         <label for="logo">NodeJS</label>
-        <img src="React-icon.svg" alt="reactiicon" class="logo">
+        <img src="images/React-icon.svg" alt="reactiicon" class="logo">
         <label for="logo">React Native</label>
     </div>
 </div>
